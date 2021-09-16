@@ -108,7 +108,7 @@ variable "ec2_count" {
 }
 
 variable "tag_instance" {
-  type = string
+  type        = string
   description = "Tag Name para a instancia"
-  default = "Kong"
+  default     = "Kong"
 }

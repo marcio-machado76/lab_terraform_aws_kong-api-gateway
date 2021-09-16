@@ -23,7 +23,7 @@ output "private_subnet" {
   value       = module.network.private_subnet
 }
 
-output "sg-kong" {
+output "sg-sgid" {
   description = "Security group id"
-  value       = module.security-group.sg-kong
+  value       = module.security-group.sg-sgid
 }

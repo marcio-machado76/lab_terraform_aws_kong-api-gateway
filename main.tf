@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.region
+  region  = var.region
   profile = "terraform"
 }
 
@@ -26,11 +26,11 @@ module "security-group" {
 
 module "ec2-instance" {
   source        = "./ec2"
-  sg-web        = module.security-group.sg-web
+  sg-sgid        = module.security-group.sg-sgid
   public_subnet = module.network.public_subnet
   script        = var.script
   key_pair      = var.key_pair
   type          = var.type
   ec2_count     = var.ec2_count
-  tag_instance = var.tag_instance
+  tag_instance  = var.tag_instance
 }
