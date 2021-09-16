@@ -16,25 +16,25 @@ variable "cidr" {
 variable "count_available" {
   type        = number
   description = "Numero de Zonas de disponibilidade"
-  default     = 2
+  default     = 1
 }
 
 variable "tag_vpc" {
   description = "Tag Name da VPC"
   type        = string
-  default     = "VPC_Xcalota"
+  default     = "vpc-terraform"
 }
 
 variable "tag_igw" {
   description = "Tag Name do internet gateway"
   type        = string
-  default     = "igw_Xcalota"
+  default     = "igw_terraform"
 }
 
 variable "tag_rtable" {
   description = "Tag Name das route tables"
   type        = string
-  default     = "rt-xcalota"
+  default     = "rt-terraform"
 }
 
 variable "nacl" {
@@ -86,7 +86,7 @@ variable "tag-sg" {
 variable "key_pair" {
   type        = string
   description = "Chave na AWS para se conectar via ssh"
-  default     = "curso-devops"
+  default     = "nome da chave"
 }
 
 variable "type" {
