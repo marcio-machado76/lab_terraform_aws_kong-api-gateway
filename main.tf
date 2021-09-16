@@ -26,7 +26,7 @@ module "security-group" {
 
 module "ec2-instance" {
   source        = "./ec2"
-  sg-sgid        = module.security-group.sg-sgid
+  sg-sgid       = module.security-group.sg-sgid
   public_subnet = module.network.public_subnet
   script        = var.script
   key_pair      = var.key_pair
