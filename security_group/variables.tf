@@ -12,5 +12,5 @@ variable "sg-self" {
 }
 
 variable "tag-sg" {
-  description = "Mapa de portas para o mesmo security group"
+  description = "Tag name do security group"
 }
